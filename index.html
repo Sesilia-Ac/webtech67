@@ -1,25 +1,209 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HoYoverse Fan Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #110832, #18123f, #412c64);
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+    }
+
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
+
 <body>
-    <h2>ลงทะเบียน</h2>
-    <form action="#" method="post">
-        ชื่อ (ภาษาไทย): <input type="text" name="thai_firstname"><br><br>
-        นามสกุล (ภาษาไทย): <input type="text" name="thai_lastname"><br><br>
-        ชื่อ (ภาษาอังกฤษ): <input type="text" name="eng_firstname"><br><br>
-        นามสกุล (ภาษาอังกฤษ): <input type="text" name="eng_lastname"><br><br>
-        ชื่อเล่น: <input type="text" name="nickname"><br><br>
-        รหัสนักศึกษา: <input type="text" name="student_id"><br><br>
-        Email: <input type="email" name="email"><br><br>
-        เบอร์มือถือ: <input type="tel" name="phone"><br><br>
-        วันเดือนปีเกิด: <input type="date" name="dob"><br><br>
-        ภูมิลำเนา: <input type="text" name="hometown"><br><br>
-        เขียนถึงตัวเอง: <br>
-        <textarea name="about" rows="4" cols="50"></textarea><br><br>
-        <input type="submit" value="ส่งข้อมูล">
-    </form>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="https://www.hoyoverse.com/_nuxt/img/logo-light.3def3bc.png" alt="HoYoverse Logo" height="40" class="me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill me-1"></i>หน้าแรก</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-controller me-1"></i>เกมทั้งหมด
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark shadow">
+              <li><a class="dropdown-item" href="honkai-impact.html">Honkai Impact 3rd</a></li>
+              <li><a class="dropdown-item" href="genshin-impact.html">Genshin Impact</a></li>
+              <li><a class="dropdown-item" href="star-rail.html">Honkai: Star Rail</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active" href="member.html"><i class="bi bi-people-fill me-1"></i>สมาชิก</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+
+    <!-- Section 1: Intro -->
+    <section class="mb-5 text-center text-white">
+      <h1 class="display-5 fw-bold">Welcome to the World of HoYoverse</h1>
+      <p class="lead">ยินดีต้อนรับสู่โลกแห่งเกมคุณภาพ ที่เต็มไปด้วยเรื่องราวสุดลึกซึ้ง และการผจญภัยไร้ที่สิ้นสุด</p>
+    </section>
+
+    <!-- Section 2: About HoYoverse -->
+    <section class="card bg-dark text-light mb-5 shadow-lg border-light">
+      <div class="card-body">
+        <h3 class="card-title">HoYoverse คืออะไร?</h3>
+        <p class="card-text">
+          HoYoverse คือผู้พัฒนาเกมระดับโลกที่อยู่เบื้องหลังเกมสุดฮิตอย่าง Genshin Impact, Honkai Impact 3rd และ Honkai:
+          Star Rail โดยมีจุดเด่นในด้านเนื้อเรื่องเข้มข้น กราฟิกสุดอลังการ และระบบเกมที่โดดเด่น
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Game Highlights -->
+    <section class="mb-5">
+      <h2 class="text-white mb-4">🌟 เกมยอดนิยม</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <a href="genshin-impact.html">
+              <img
+                src="https://play-lh.googleusercontent.com/iP2i_f23Z6I-5hoL2okPS4SxOGhj0q61Iyb0Y1m4xdTsbnaCmrjs7xKRnL6o5R4h-Yg"
+                class="card-img-top" alt="Genshin Impact">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Genshin Impact</h5>
+              <p class="card-text">สำรวจโลก Teyvat กับเนื้อเรื่องสุดเข้มข้น และระบบ Element ที่ไม่เหมือนใคร</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <a href="honkai-impact.html">
+              <img
+                src="https://play-lh.googleusercontent.com/zzbwkYKEXJex3AQ7KTiT3fmKyla4slIQMFBGU3G3gDWBODeg1EEoutHuR9_rf0fEvUyn"
+                class="card-img-top" alt="Honkai Impact 3rd">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Honkai Impact 3rd</h5>
+              <p class="card-text">เกมแอคชั่นต่อสู้สุดมันส์ ที่มาพร้อมตัวละครสุดเท่ และเรื่องราวลึกซึ้ง</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <a href="star-rail.html">
+              <img
+                src="https://play-lh.googleusercontent.com/cM6aszB0SawZNoAIPvtvy4xsfeFi5iXVBhZB57o-EGPWqE4pbyIUlKJzmdkH8hytuuQ"
+                class="card-img-top" alt="Star Rail">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Honkai: Star Rail</h5>
+              <p class="card-text">ออกผจญภัยข้ามดวงดาวบน Astral Express กับระบบ RPG สุดล้ำ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Section: ตัวละครล่าสุด -->
+<section class="mb-5">
+  <h2 class="text-white mb-4">ตัวละครล่าสุด</h2>
+  <div class="row g-4">
+
+    <!-- Character 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 text-white bg-secondary shadow-sm">
+        <div class="card-img-top">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/NlOrRulSg1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Varesa</h5>
+          <p class="card-text">นักรบแห่งเผ่าผองสรรพสิ่ง <br>ผู้ชื่นชอบอาหารและเป็นแชมป์กินจุแห่งNatlan</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Character 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 text-white bg-secondary shadow-sm">
+        <div class="card-img-top">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/D4vDgHz2jtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Durandal</h5>
+          <p class="card-text">ลูกสาวคนโตของkaslanaผู้สืบเชื้อสายวีรชน</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Character 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 text-white bg-secondary shadow-sm">
+        <div class="card-img-top">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/irRjMAiYFz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Castorice</h5>
+          <p class="card-text">หนึ่งในผู้สืบเชื้อสายโลหิตทองคำแห่ง Amphoreus <br>ผู้สืบทอดเชื้อไฟแห่ง"ความตาย"</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  </div>
+
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white-50 py-4 shadow-lg border-top border-secondary">
+    <div class="container">
+      <p class="mb-1">“Tech Otaku Save The World”</p>
+      <p class="mb-0">&copy; Created By WelcometoSoulsociety Group</p>
+    </div>
+  </footer>
+
+
+
 </body>
+
 </html>
